@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery.js"></script>
+    <title>Document</title>
+</head>
+<body>
+https://search.cdn.huya.com/?callback=jQuery1111007820925022982261_1566364933551&m=Search&do=getSearchContent&q=DK&uid=0&v=4&typ=-5&livestate=0&rows=40&start=0&_=1566364933559
+https://search.cdn.huya.com/?callback=jQuery1111007820925022982261_1566364933551&m=Search&do=getSearchContent&q=DK&uid=0&v=4&typ=-7&livestate=0&rows=40&start=0&_=1566366798000
+</body>
+<script>
+    $.ajax({
+        url: "www.search.cdn.huya.com",
+        data: {m: "Search", do: "getSearchContent", q: 123, uid: 0, v: 4, typ: -7, livestate: 0, rows: 5},
+        dataType: "jsonp",
+        success(res){
+            console.log(res);
+        }
+    })
+</script>
+</html>
